@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Amy's Girly Aesthetic Store | Beauty • Style • Aesthetic</title>
+
+  <meta
+    name="description"
+    content="Amy's Girly Aesthetic Store — beauty, skincare, perfumes, jewellery, fashion and cute aesthetic pieces."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT -->
+  <div class="announcement">
+    🎀 Nationwide Delivery Available • Shop Your Aesthetic ✨
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="logo-area">
+      <div class="logo-mark">🎀</div>
+
+      <div>
+        <h1>Amy's</h1>
+        <span>Girly Aesthetic Store</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+  <a href="#home">Home</a>
+  <a href="#categories">Categories</a>
+  <a href="#shop">Shop</a>
+  <a href="#track-order">Track Order</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+    <div class="header-actions">
+      <button id="searchBtn" class="icon-btn">⌕</button>
+      <button id="wishlistBtn" class="icon-btn">
+        ♡<span id="wishlistCount">0</span>
+      </button>
+      <button id="cartBtn" class="icon-btn">
+       🛍<span id="cartCount">0</span>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- SEARCH -->
+  <div id="searchBox" class="search-box">
+  <div class="search-inner">
+
+    <div class="search-input-wrap">
+      <span class="search-icon">⌕</span>
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        autocomplete="off"
+      >
+
+      <button id="clearSearch" class="clear-search" type="button">
+        ×
+      </button>
+    </div>
+
+    <div id="searchSuggestions" class="search-suggestions"></div>
+
+  </div>
+</div>
+
+  <!-- HERO -->
+  <main id="home">
+
+    <section class="hero">
+
+      <img
+        src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1800&q=85"
+        alt="Beauty products"
+      >
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <span class="hero-label">WELCOME TO AMY'S WORLD 🎀</span>
+
+        <h2>
+          Feel Pretty.<br>
+          Feel Confident.<br>
+          <em>Feel Like You.</em>
+        </h2>
+
+        <p>
+          Beauty, style and all the little things that make life
+          feel a little prettier. ✨
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#shop" class="btn btn-primary">Shop Now</a>
+          <a href="#categories" class="btn btn-light">Explore</a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- SLIDING STATEMENT STRIP -->
+  <section class="statement-strip">
+
+    <div class="statement-track">
+
+      <span>Feel pretty. Feel confident. Feel like you. 🎀</span>
+      <span>•</span>
+      <span>Your beauty. Your style. Your aesthetic. 💕</span>
+      <span>•</span>
+      <span>Little things that make life prettier. ✨</span>
+      <span>•</span>
+      <span>Look good. Feel good. Smell good. 💗</span>
+      <span>•</span>
+
+      <span>Feel pretty. Feel confident. Feel like you. 🎀</span>
+      <span>•</span>
+      <span>Your beauty. Your style. Your aesthetic. 💕</span>
+      <span>•</span>
+      <span>Little things that make life prettier. ✨</span>
+      <span>•</span>
+      <span>Look good. Feel good. Smell good. 💗</span>
+     i love how beautiful i have become and ob
+
+    </div>
+
+  </section>
+
+  <!-- CATEGORIES -->
+  <section id="categories" class="section">
+
+    <div class="section-heading">
+      <span>EXPLORE</span>
+      <h2>Your Little Obsession 🎀</h2>
+      <p>Find something that feels completely you.</p>
+    </div>
+
+    <div class="category-grid">
+
+  <button class="category-card" data-category="Whitening">
+
+    <img
+      src="images/products/vitamin-c-whitening-body-lotion.jpeg"
+      alt="Whitening and brightening skincare"
+    >
+
+    <div class="category-overlay"></div>
+
+    <div class="category-content">
+      <small>Glow & brighten</small>
+      <h3>Whitening</h3>
+    </div>
+
+  </button>
+
+
+  <button class="category-card" data-category="Face Care">
+
+    <img
+      src="images/products/brigthening-vitamin-c-face-scrub.jpeg"
+      alt="Face care products"
+    >
+
+    <div class="category-overlay"></div>
+
+    <div class="category-content">
+      <small>Care for your skin</small>
+      <h3>Face Care</h3>
+    </div>
+
+  </button>
+
+
+  <button class="category-card" data-category="Masks">
+
+    <img
+      src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1000&q=85"
+      alt="Face masks"
+    >
+
+    <div class="category-overlay"></div>
+
+    <div class="category-content">
+      <small>Self-care time</small>
+      <h3>Masks</h3>
+    </div>
+
+  </button>
+
+
+  <button class="category-card" data-category="Body Care">
+
+    <img
+      src="images/products/yum-yum-pef.jpeg"
+      alt="Body care products"
+    >
+
+    <div class="category-overlay"></div>
+
+    <div class="category-content">
+      <small>Feel good</small>
+      <h3>Body Care</h3>
+    </div>
+
+  </button>
+
+
+  <button class="category-card" data-category="Hair & Styling">
+
+    <img
+      src="images/products/hair-st.jpeg"
+      alt="Hair styling products"
+    >
+
+    <div class="category-overlay"></div>
+
+    <div class="category-content">
+      <small>Style your look</small>
+      <h3>Hair & Styling</h3>
+    </div>
+
+  </button>
+
+
+  <button class="category-card" data-category="Baskets">
+
+    <img
+      src="images/products/mixed8.jpeg"
+      alt="Beauty product baskets"
+    >
+
+    <div class="category-overlay"></div>
+
+    <div class="category-content">
+      <small>Pretty bundles</small>
+      <h3>Mixed Baskets</h3>
+    </div>
+
+  </button>
+
+</div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop" class="section shop-section">
+
+    <div class="section-heading">
+      <span>SHOP</span>
+      <h2>Find Your Pretty ✨</h2>
+      <p>Little things for your beauty, style and everyday aesthetic.</p>
+    </div>
+
+    <div class="shop-controls">
+
+  <div class="filter-buttons">
+
+    <button class="filter active" data-filter="All">
+      All Products
+    </button>
+
+    <button class="filter" data-filter="Whitening">
+      Whitening
+    </button>
+
+    <button class="filter" data-filter="Face Care">
+      Face Care
+    </button>
+
+    <button class="filter" data-filter="Masks">
+      Masks
+    </button>
+
+    <button class="filter" data-filter="Lip Care">
+      Lip Care
+    </button>
+
+    <button class="filter" data-filter="Oral Care">
+      Oral Care
+    </button>
+
+    <button class="filter" data-filter="Body Care">
+      Body Care
+    </button>
+
+    <button class="filter" data-filter="Hair & Styling">
+      Hair & Styling
+    </button>
+
+    <button class="filter" data-filter="Accessories">
+      Accessories
+    </button>
+
+    <button class="filter" data-filter="Supplements">
+      Supplements
+    </button>
+
+    <button class="filter" data-filter="Baskets">
+      Mixed Baskets
+    </button>
+
+    <button class="filter" data-filter="Room Decor">
+      Room Decor
+    </button>
+
+  </div>
+
+  <select id="sortProducts">
+    <option value="default">Sort products</option>
+    <option value="low">Price: Low to High</option>
+    <option value="high">Price: High to Low</option>
+    <option value="az">Name: A-Z</option>
+  </select>
+
+</div>
+
+    <div id="productGrid" class="product-grid"></div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+
+    <div class="about-image">
+      <img
+        src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1200&q=85"
+        alt="Fashion and beauty"
+      >
+    </div>
+
+    <div class="about-content">
+
+      <span>OUR LITTLE WORLD</span>
+
+      <h2>Beauty. Style. Aesthetic. You. 💗</h2>
+
+      <p>
+        Welcome to your go-to place for all things beauty, girly
+        and aesthetic. A little world created for girls who love
+        beauty, skincare, perfumes, jewellery, trendy clothes,
+        fashionable pieces and cute accessories.
+      </p>
+
+      <p>
+        At Amy's Girly Aesthetic Store, our goal is to help every
+        girl look good, feel good, smell good and feel confident
+        in her own skin.
+      </p>
+
+      <p class="about-highlight">
+        Your beauty. Your style. Your aesthetic. Your happy place. 🎀
+      </p>
+
+    </div>
+
+  </section>
+  <!-- ORDER TRACKING -->
+  <section class="order-tracking-section" id="track-order">
+
+    <div class="tracking-container">
+
+      <div class="section-heading">
+        <span>ORDER TRACKING</span>
+
+        <h2>Where's My Order? 🎀</h2>
+
+        <p>
+          Enter your Order ID below to see the latest update on your order.
+        </p>
+      </div>
+
+      <div class="tracking-search">
+
+        <input
+          type="text"
+          id="trackingOrderId"
+          placeholder="Enter your Order ID"
+          autocomplete="off"
+        >
+
+        <button
+          type="button"
+          id="trackOrderBtn"
+          class="btn btn-primary"
+        >
+          Track My Order
+        </button>
+
+      </div>
+
+      <p class="tracking-help">
+        Your Order ID was shown after you placed your order.
+      </p>
+
+      <!-- TRACKING RESULT -->
+
+      <div
+        id="trackingResult"
+        class="tracking-result"
+      >
+
+        <div class="tracking-result-header">
+
+          <div>
+            <span>ORDER ID</span>
+            <h3 id="trackedOrderId">—</h3>
+          </div>
+
+          <div class="tracking-status-badge" id="trackingStatus">
+            Pending
+          </div>
+
+        </div>
+
+
+        <div class="tracking-info">
+
+          <div class="tracking-info-item">
+            <span>Customer</span>
+            <strong id="trackedCustomerName">—</strong>
+          </div>
+
+          <div class="tracking-info-item">
+            <span>Total</span>
+            <strong id="trackedOrderTotal">₦0</strong>
+          </div>
+
+          <div class="tracking-info-item">
+            <span>Payment</span>
+            <strong id="trackedPaymentStatus">
+              Awaiting Payment
+            </strong>
+          </div>
+
+        </div>
+
+
+        <!-- ORDER TIMELINE -->
+
+        <div class="order-timeline">
+
+          <div
+            class="timeline-step"
+            data-status="Pending"
+          >
+            <div class="timeline-dot">✓</div>
+
+            <div>
+              <strong>Order Received</strong>
+              <span>Your order has been received.</span>
+            </div>
+          </div>
+
+
+          <div
+            class="timeline-line"
+            data-line="Processing"
+          ></div>
+
+
+          <div
+            class="timeline-step"
+            data-status="Processing"
+          >
+            <div class="timeline-dot">✓</div>
+
+            <div>
+              <strong>Processing</strong>
+              <span>Your order is being prepared.</span>
+            </div>
+          </div>
+
+
+          <div
+            class="timeline-line"
+            data-line="Shipped"
+          ></div>
+
+
+          <div
+            class="timeline-step"
+            data-status="Shipped"
+          >
+            <div class="timeline-dot">✓</div>
+
+            <div>
+              <strong>Shipped</strong>
+              <span>Your order is on its way.</span>
+            </div>
+          </div>
+
+
+          <div
+            class="timeline-line"
+            data-line="Delivered"
+          ></div>
+
+
+          <div
+            class="timeline-step"
+            data-status="Delivered"
+          >
+            <div class="timeline-dot">✓</div>
+
+            <div>
+              <strong>Delivered</strong>
+              <span>Your order has been delivered. 💕</span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <button
+          type="button"
+          id="refreshTracking"
+          class="tracking-refresh"
+        >
+          ↻ Check for Latest Update
+        </button>
+
+      </div>
+
+
+      <div
+        id="trackingError"
+        class="tracking-error"
+      ></div>
+
+    </div>
+
+  </section>
+
+  <!-- PROMO -->
+
+  <section class="promo" id="wholesale">
+
+  <div class="promo-content">
+    <span>FOR BUSINESSES & BULK BUYERS</span>
+
+    <h2>Buying in Bulk? 🎀</h2>
+
+    <p>
+      We also sell wholesale. Whether you're restocking your business
+      or buying multiple items, send us a DM for wholesale prices
+      and availability.
+    </p>
+  </div>
+
+  <a
+    href="https://wa.me/2348170957488?text=Hello%20Amy's%20Girly%20Aesthetic%20Store%2C%20I'm%20interested%20in%20wholesale%20prices."
+    target="_blank"
+    rel="noopener"
+    class="btn btn-light"
+  >
+    DM for Wholesale Prices
+  </a>
+
+</section>
+
+  <!-- REVIEWS -->
+  <section class="section">
+
+    <div class="section-heading">
+      <span>LOVE NOTES</span>
+      <h2>What Our Girls Say 💌</h2>
+    </div>
+
+    <div class="reviews">
+
+      <article class="review">
+        <div>★★★★★</div>
+        <p>“Everything is so cute! I literally want everything.”</p>
+        <strong>— Favour Customer</strong>
+      </article>
+
+      <article class="review">
+        <div>★★★★★</div>
+        <p>“The aesthetic is giving exactly what I wanted.”</p>
+        <strong>— Blessing Customer</strong>
+      </article>
+
+      <article class="review">
+        <div>★★★★★</div>
+        <p>“Pretty things, good vibes and great service. 💕”</p>
+        <strong>— Ugochi Customer</strong>
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+
+    <div>
+      <span>STAY IN THE LOOP 🎀</span>
+      <h2>Pretty things are coming.</h2>
+      <p>Join us for new arrivals, cute finds and special updates.</p>
+    </div>
+
+    <form id="newsletterForm">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Join us</button>
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer">
+
+    <div class="footer-brand">
+
+      <div class="footer-logo">🎀</div>
+
+      <h2>Amy's Girly Aesthetic Store</h2>
+
+      <p>
+        Your beauty. Your style. Your aesthetic.
+        Your happy place. 💗
+      </p>
+
+    </div>
+
+    <div class="footer-column">
+
+      <h3>Contact</h3>
+
+      <a href="tel:08170957488">📞 08170957488</a>
+
+      <a
+        href="https://wa.me/2348170957488"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        💬 WhatsApp
+      </a>
+
+      <p>📍 Enugu State, Nigeria</p>
+
+      <p>🚚 Nationwide Delivery</p>
+
+    </div>
+
+    <div class="footer-column">
+
+      <h3>Follow Us</h3>
+
+      <a
+        href="https://www.tiktok.com/@amarachigoodness02"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        🎵 TikTok
+      </a>
+
+      <a
+        href="https://www.instagram.com/goody3930/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📸 Instagram
+      </a>
+
+    </div>
+
+    <div class="footer-column">
+
+      <h3>Quick Links</h3>
+
+      <a href="#home">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#shop">Shop</a>
+      <a href="#track-order">Track Order</a>
+      <a href="#about">About Us</a>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <p>© 2026 Amy's Girly Aesthetic Store. All rights reserved.</p>
+
+      <p>Made with 🎀 by FancyElla</p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- CART DRAWER -->
+  <aside id="cartDrawer" class="drawer">
+
+    <div class="drawer-header">
+      <h2>Your Cart 🛍</h2>
+      <button id="closeCart">×</button>
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">₦0</strong>
+      </div>
+
+      <button id="checkoutBtn" class="btn btn-primary full">
+        Proceed to Checkout
+      </button>
+
+    </div>
+
+  </aside>
+
+  <div id="drawerOverlay" class="drawer-overlay"></div>
+
+
+  <!-- PRODUCT MODAL -->
+  <div id="productModal" class="modal">
+
+    <div class="modal-box product-modal-box">
+
+      <button class="modal-close" data-close="productModal">×</button>
+
+      <div id="productDetails"></div>
+
+    </div>
+
+  </div>
+
+
+  <!-- CHECKOUT MODAL -->
+  <div id="checkoutModal" class="modal">
+
+    <div class="modal-box checkout-box">
+
+      <button class="modal-close" data-close="checkoutModal">×</button>
+
+      <span>CHECKOUT</span>
+
+      <h2>Complete Your Order 🎀</h2>
+
+      <form id="checkoutForm">
+
+        <input
+          type="text"
+          id="customerName"
+          placeholder="Full name"
+          required
+        >
+
+        <input type="tel" id="customerPhone" placeholder="Phone number" required>
+
+<select id="customerState" required>
+  <option value="">Select delivery</option>
+  <option value="Enugu">Enugu</option>
+  <option value="Outside Enugu">Outside Enugu </option>
+  <option value="Pick up">Pick up</option>
+</select>
+
+<small class="delivery-note">
+  Enugu— ₦2,000 delivery
+  Outside Enugu: add your location to the address and we'll send your delivery price.
+  Pick up- No fee
+</small>
+
+<input type="text" id="customerAddress" placeholder="Delivery address. Can add extra info" required>
+
+<div class="delivery-summary">
+  <div class="delivery-row">
+    <span>Subtotal</span>
+    <strong id="checkoutSubtotal">₦0</strong>
+  </div>
+
+  <div class="delivery-row">
+    <span>Delivery</span>
+    <strong id="deliveryFee">₦0</strong>
+  </div>
+
+  <div class="delivery-row delivery-total">
+    <span>Total</span>
+    <strong id="checkoutTotal">₦0</strong>
+  </div>
+</div>
+
+        <div class="payment-box">
+
+          <h3>💳 Payment by Bank Transfer</h3>
+
+          <p>Transfer your order total to:</p>
+
+          <div class="bank-detail">
+            <span>Bank</span>
+            <strong>OPay</strong>
+          </div>
+
+          <div class="bank-detail">
+            <span>Account Number</span>
+            <strong>9037405727</strong>
+          </div>
+
+          <div class="bank-detail">
+            <span>Account Name</span>
+            <strong>Anichukwu Amarachi Goodness</strong>
+          </div>
+
+          <button
+            type="button"
+            id="copyAccount"
+            class="copy-btn"
+          >
+            Copy Account Number
+          </button>
+
+        </div>
+
+        <button class="btn btn-primary full" type="submit">
+          Place Order
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <!-- TOAST -->
+  <div id="toast" class="toast"></div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
