@@ -1686,32 +1686,30 @@ function updateWishlistCount() {
 
 function toggleWishlist(productId) {
 
-  if (wishlist.includes(productId)) {
+  const id = String(productId);
 
-    wishlist =
-      wishlist.filter(
-        id => id !== productId
-      );
+  const alreadySaved = wishlist.some(
+    item => String(item) === id
+  );
 
-    showToast(
-      "Removed from wishlist."
+  if (alreadySaved) {
+
+    wishlist = wishlist.filter(
+      item => String(item) !== id
     );
+
+    showToast("Removed from wishlist.");
 
   } else {
 
-    wishlist.push(productId);
+    wishlist.push(id);
 
-    showToast(
-      "Added to your wishlist 💕"
-    );
+    showToast("Added to your wishlist 💕");
 
   }
 
-
   saveState();
-
   updateWishlistCount();
-
   renderProducts();
 
 }
@@ -1738,10 +1736,12 @@ document
 
 
       const wishedProducts =
-        products.filter(
-          product =>
-            wishlist.includes(product.id)
-        );
+  products.filter(
+    product =>
+      wishlist.some(
+        id => String(id) === String(product.id)
+      )
+  );
 
 
       productGrid.innerHTML = "";
@@ -1775,7 +1775,7 @@ document
 
               <button
                 class="wishlist"
-                onclick="toggleWishlist(${product.id})"
+                onclick="toggleWishlist('${product.id}')"
               >
                 ♥
               </button>
