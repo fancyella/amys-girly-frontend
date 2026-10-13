@@ -203,10 +203,16 @@ function renderProducts() {
   products.forEach((product) => {
 
     const row = document.createElement("tr");
+    const rawImage = String(product.image || "").trim();
 
-    const imageSrc = product.image.startsWith("http")
-      ? product.image
-      : "../frontend/" + product.image;
+const cleanedImagePath = rawImage
+  .replace(/^(?:\.\.\/|\.\/)+/, "")
+  .replace(/^frontend\//i, "")
+  .replace(/^\/+/, "");
+
+const imageSrc = /^https?:\/\//i.test(rawImage)
+  ? rawImage
+  : "/" + cleanedImagePath;
 
     row.innerHTML = `
       <td>
